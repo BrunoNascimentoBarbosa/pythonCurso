@@ -1,3 +1,5 @@
+
+print ('\033[0;36;40m =====Desafio 04===== \033[m')
 info = input('Digite algo ')
 print('O tipo primitivo é : ',type(info))
 print('É um número? ',info.isnumeric())

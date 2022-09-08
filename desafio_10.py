@@ -2,6 +2,8 @@
 #carteira e mostre quantos Dólares ele pode comprar.
 import requests
 
+
+print('\033[0;32;40m===== Desafio ===== \033[m')
 valueWallet = float(input("Quantos reais você tem na carteira? R$ "))
 requisicao = requests.get("https://economia.awesomeapi.com.br/json/last/USD,EUR")
 requisicao_dic = requisicao.json()

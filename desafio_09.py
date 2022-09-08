@@ -1,6 +1,6 @@
 #Crie um programa que recebe um número e apartir desse número crie a sua tabuada.
-
-numero = int(input('Digite um número para descobrir a sua tabuada: '))
+print ('\033[0;34m ===== Desafio 09 ===== \033[m')
+numero = int(input('Digite um númro para descobrir a sua tabuada: '))
 print('😀 Você digitou {} '.format(numero))
 print('='*10)
 print('{} x 1 = {}'.format(numero,numero*1))
