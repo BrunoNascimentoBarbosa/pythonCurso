@@ -5,10 +5,11 @@ a sua porção inteiro.
 Ex: Digite um número: 6.127
 O numero 6.127 tem a parte inteira 6.
 """
+import color
 
 from math import trunc
 
 numero = float(input('Digite um numero: '))
 
 resultado = trunc(numero)
-print(resultado)
+print(color.cor['verde'],resultado,color.cor['limpa'])

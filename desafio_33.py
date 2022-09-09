@@ -2,6 +2,7 @@
 Faça um programa que leia três números e
 mostre qual é o maior e qual é o menor.
 '''
+import color
 
 a = int(input('Digite o primeiro número.'))
 b = int(input('Digite o segundo número.'))
@@ -21,5 +22,5 @@ if b > a and b > c:
 if c > a and c > b:
     maior = c
 
-print('O menor valor digitado é {}'.format(menor))
-print('O maior valor digitado é {}'.format(maior))
+print(color.cor['vermelho'] + 'O menor valor digitado é {}'.format(menor))
+print(color.cor['azul']  + 'O maior valor digitado é {}'.format(maior))

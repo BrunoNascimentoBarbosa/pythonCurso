@@ -6,7 +6,9 @@ Primeiro= Ana
 último = Souza
 '''
 
-nome =str(input('Digite o seu nome completo:')).strip()
+import color
+
+nome =str(input(color.cor['azul'] + 'Digite o seu nome completo:' + color.cor['limpa'])).strip()
 print(nome.split())
 nome = nome.split()
 print('Seu primeiro nome é: {} '.format(nome[0]))

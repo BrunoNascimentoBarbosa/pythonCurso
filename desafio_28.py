@@ -6,14 +6,15 @@ descobrir qual foi o número escolhido pelo computador.
 O programa deverá escrever na tela se o usuário venceu ou perdeu.
 '''
 import random
+import color
 from time import sleep
 
-print('O computador vai pensar um número de 0 a 5.')
+print(color.cor['amarelo'] + 'O computador vai pensar um número de 0 a 5.' + color.cor['limpa'])
 print('Você deve adivinhar o número para ganhar.')
 numero = random.randrange(5)
 
 jogada = int(input('Digite um número de 0 a 5: '))
-print('Processando...')
+print(color.cor['azul'] + 'Processando...' + color.cor['limpa'])
 sleep(3)
 if jogada == numero:
     print('Você ganhou o número escolhido foi :{}'.format(numero))

@@ -18,8 +18,9 @@ catetoAdjacente = pow(b,2)
 soma = cateto + catetoAdjacente
 hipotenusa = sqrt(soma)
 
-print('O valor da hipotenusa é {:.2f}M  ◣'.format(hipotenusa))
+import color
 
+print('O valor da hipotenusa é {:.2f}M  ◣'.format(hipotenusa))
 
 #Solução do professor
 print('='*10)
@@ -33,4 +34,4 @@ print('='*10)
 catetoOp = float(input('Comprimento da cateto oposto: '))
 catetoAd = float(input('Comprimento do cateto adjacente: '))
 hipo = hypot(catetoAd,catetoOp)
-print('A hipotenusa vai medir {:.2f}'.format(hipo))
+print('{} A hipotenusa vai medir {:.2f} {}'.format(color.cor['roxo'], hipo , color.cor['limpa']))

@@ -7,11 +7,12 @@ pessoa e mostre:
 3) Quantas letras ao todo (sem considerar espaços).
 4) Quantas letras tem o primeiro nome.
 '''
+import color
 
 name = str(input('Digite o nome completo: '))
 print(name)
-print(name.upper())
-print(name.lower())
+print(color.cor['verde'],name.upper(),color.cor['limpa'])
+print(color.cor['azul'],name.lower(),color.cor['limpa'])
 print(len(name))
 name = name.strip()
 print(len(name))
