@@ -12,17 +12,24 @@ ou passou do prazo.
 
 from datetime import date
 
-year = int(input('Digite seu ano de nascimento: '))
-currentYear = date.today().year
-age = currentYear - year
+nasc = int(input('Digite seu ano de nascimento: '))
+atual = date.today().year
+idade = atual - nasc
 
-print(age)
+print("Quem nasceu em {} tem {} anos em {}.".format(nasc, idade, atual))
 
-if age < 17:
-    pastYears = 17 - age
-    print('Tem apenas {} ano. Ainda vai se alistar ao Serviço militar. Falta {} anos'.format(age,pastYears))
-elif age ==  17 or age == 18:
-    print('Você tem {} ano. Tá na hora de fazer o seu alistamento. Para mais informação acesse:https://alistamento.eb.mil.br/'.format(age))
-else:
-    pastYears = age - 18
-    print('Você tem {} anos, já passou do tempo do alistamento. Passou {} anos'.format(age,pastYears))
+if idade == 18:
+    print("Você tem que se alistar IMEDIATAMENTE!")
+elif idade < 18:
+    saldo = 18 - idade
+    print("Ainda faltam {} anos para o alistamento".format(saldo))
+    ano = atual + saldo
+    print("Seu alistamento será em {}".format(ano))
+elif idade > 18 :
+    saldo = idade -18
+    print ("Você já deveria ter se alistado há {} anos.".format(saldo))
+    ano = atual - saldo
+    print("Seu alistamento foi em {}".format(ano))
+
+
+
