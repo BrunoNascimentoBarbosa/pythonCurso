@@ -26,7 +26,7 @@ elif formaPg == 2:
 elif formaPg == 3:
     print("Para parcelamento no cartão não tem desconto R${}".format(produto))
 elif  formaPg == 4:
-    parcelas = produto / 3
+    totParcelas = int(input("Qual o total de parcelas."))
     print("Pagamento com juros de 20%, \n"
-          "3 x {:.2f} \n"
-          "valor total R${} ".format(parcelas, produto + (produto * 20 / 100)))
+          "{} x {:.2f} \n"
+          "valor total R${} ".format( totParcelas, (produto/totParcelas),produto + (produto * 20 / 100)))

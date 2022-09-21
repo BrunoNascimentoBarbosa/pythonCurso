@@ -6,7 +6,7 @@ sua categoria, de acordo com a idade.
 - Até 9 anos: MIRIM
 - Até 14 anos: INFANTIL
 - Até 19 anos: JUNIOR
-- Até 20 anos: SÊNIOR
+- Até 25 anos: SÊNIOR
 - Acima: Master
 """
 
@@ -21,9 +21,9 @@ if age <= 9:
     print('ATLETA MIRIN')
 elif age > 10 and age < 14:
     print('ATLETA INFANTIL')
-elif age > 14 and age < 19:
+elif age > 14 and age < 19:    #elif 14 < age < 19  SUGESTÃO DO PYCHARM PARA SIMPLIFICAR.
     print('ATLETA JUNIOR')
-elif age  == 20:
+elif age  <= 25:
     print('ATLETA SÊNIOR')
 else:
     print('ATLETA MASTER')

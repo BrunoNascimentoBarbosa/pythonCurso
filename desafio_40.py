@@ -17,7 +17,7 @@ print(average)
 
 if average < 5.0:
     print('Aluno REPROVADO.')
-elif average == 5.0 or average <= 6.9:
+elif average == 5.0 or average <= 7: # opção if 7 > average >= 5: (professor)
     print('Aluno em RECUPERAÇÃO.')
 else:
     print('Aluno APROVADO.' )
