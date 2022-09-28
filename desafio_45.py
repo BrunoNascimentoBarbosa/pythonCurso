@@ -5,6 +5,7 @@ Pedra, papel e tesoura.
 """
 
 import random
+from time import sleep
 
 print("Vamos Jogar JOKENPÔ")
 print ("Escolha:\n 1 Pedra "
@@ -13,6 +14,12 @@ print ("Escolha:\n 1 Pedra "
 jogador = int(input("Digite sua jogada:"))
 jogadas = [1,2,3]
 maquina = (random.choice(jogadas))
+
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
 print(jogador,maquina)
 
 if jogador == 1 and maquina == 3:

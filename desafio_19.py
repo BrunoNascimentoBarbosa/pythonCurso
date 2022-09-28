@@ -5,7 +5,7 @@ escreva o nome do escolhido.
 """
 import random
 import color
-from  random import choice,randrange, sample  #Importando apens o choice
+#from  random import choice,randrange, sample  #Importando apens o choice
 import random as r
 
 n1 = str(input('Digite o  nome do aluno 1 :'))
@@ -14,7 +14,7 @@ n3 = str(input('Digiete o nome do aluno 2 :'))
 n4 = str(input('Digiete o nome do aluno 2 :'))
 
 lista = [n1,n2,n3,n4]
-escolhido = choice(lista)
+escolhido = random.choice(lista)
 
 print('{} O aluno escolhido foi {}: '.format(color.cor['verde'],escolhido))
 random.shuffle(lista)
