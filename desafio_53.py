@@ -9,3 +9,15 @@ Ex: APOS A SOPA
     ANOTARAM A DATA DA MARATONA
 '''
 
+frase = input("Digite uma frase: ").strip()
+print(frase)
+
+print(frase.replace(" ",""))
+frase = (frase.replace(" ",""))
+fraseInvertida = frase[::-1]
+print(frase[::-1])
+
+if frase == fraseInvertida:
+    print("É um POLINDROMO.")
+else:
+    print("Não é um POLINDROMO.")
