@@ -23,4 +23,4 @@ while jogador != computador:
     soma = soma + 1
     jogador = int(input("Jogue novamente"))
 print("Você acertou: Você jogou {} e o computado jogou {}".format(jogador,computador))
-print("Você usou {} jogadas até acertar.".format(soma-1))
+print("Você usou {} jogadas até acertar.".format(soma))
