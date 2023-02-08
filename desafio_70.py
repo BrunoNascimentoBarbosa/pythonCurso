@@ -16,7 +16,6 @@ cont = 0
 menorValor = 99999
 barato = ''
 while True:
-
     produto = (input("Nome do produto: "))
     valor = float(input("Valor do produto R$:"))
     

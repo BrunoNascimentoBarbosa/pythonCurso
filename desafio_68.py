@@ -11,11 +11,14 @@ import random
 soma = 0
 while True:
     print("--"*30)
-    choicePlay = input("Escolha [PAR] OU [IMPAR] : ") 
-    if choicePlay == 'PAR':
-        print("Você escoheu PAR.")
+    choicePlay = input("Escolha [P] para Par OU [I] para impar : ").upper()
+    if choicePlay == 'P':
+       print("Você escoheu PAR.")
+    elif choicePlay == 'I':
+       print("Você escolheu IMPAR.")
     else:
-        print("Você escolheu IMPAR.")
+        print("Escolha invalida")
+        break
 
     jogada = int(input("Digite um valor para jogar com o computador: "))
     print("--"*30)
@@ -23,15 +26,17 @@ while True:
     computador = random.choice(jogadaPc)
     resultado = jogada + computador
     print(f"{jogada} {computador} {resultado}")
-    if choicePlay == 'PAR' and resultado % 2 ==0 :
+
+    if choicePlay == 'P' and resultado % 2 ==0 :
         print("Você ganhou.")
         soma += 1
-    elif choicePlay == 'IMPAR' and resultado % 2 != 0:
+    elif choicePlay == 'I' and resultado % 2 != 0:
         print("Você ganhou.")
         soma += 1
     else:
         print("Você perdeu.")
         break
+
 print(f"Você ganhou {soma} vezes. Voltei sempre ao jogo.")
 
 
